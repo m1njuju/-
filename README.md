@@ -2,23 +2,28 @@
 
 ## Project setup
 ```
+cd frontend
+npm install
+cd ..
+cd backend
 npm install
 ```
 
 # backend
 
-## Project setup
-```
-npm install
-SET DEBUG=backend:* & npm start
-```
-
 ### Compiles and hot-reloads for development
+### 반드시 backend 폴더에서 실행
+### 첫 시작은 SET DEBUG=backend:* & npm start 으로 설정
 ```
-npm run serve
+SET DEBUG=backend:* & npm start
+//or
+node ./bin/www
+//or
+nodemon ./bin/www
 ```
 
 ### Compiles and minifies for production
+### 프론트엔드를 수정했다면 frontend 폴더에서 빌드
 ```
 npm run build
 ```
